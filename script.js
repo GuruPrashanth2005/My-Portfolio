@@ -62,6 +62,28 @@ function updateActiveNav() {
 
 window.addEventListener('scroll', updateActiveNav);
 
+// ==================== MOBILE MENU ====================
+const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+const navLinksContainer = document.querySelector('.nav-links');
+
+if (mobileMenuToggle && navLinksContainer) {
+    mobileMenuToggle.addEventListener('click', () => {
+        mobileMenuToggle.classList.toggle('open');
+        navLinksContainer.classList.toggle('active');
+        document.body.style.overflow = navLinksContainer.classList.contains('active') ? 'hidden' : '';
+    });
+
+    // Close menu when a link is clicked
+    const links = navLinksContainer.querySelectorAll('.nav-link');
+    links.forEach(link => {
+        link.addEventListener('click', () => {
+            mobileMenuToggle.classList.remove('open');
+            navLinksContainer.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+    });
+}
+
 // ==================== SMOOTH SCROLL ====================
 navLinks.forEach(link => {
     link.addEventListener('click', (e) => {
