@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GURU PRASHANTH S - AIML Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Animated Grid Background -->
+    <div class="grid-background"></div>
+    <div class="gradient-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <!-- Navigation with Theme Toggle -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#hero" class="logo">
+                <span class="logo-bracket">&lt;</span>GP<span class="logo-bracket">/&gt;</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#hero" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <!-- Theme Selector in Nav -->
+            <div class="theme-selector">
+                <button class="theme-btn" data-theme="dark" title="Dark Mode">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
+                    </svg>
+                </button>
+                <button class="theme-btn" data-theme="light" title="Light Mode">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </button>
+                <button class="theme-btn" data-theme="warm" title="Warm Mode">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M12.395 2.553a1 1 0 00-1.45-.385c-.345.23-.614.558-.822.88-.214.33-.403.713-.57 1.116-.334.804-.614 1.768-.84 2.734a31.365 31.365 0 00-.613 3.58 2.64 2.64 0 01-.945-1.067c-.328-.68-.398-1.534-.398-2.654A1 1 0 005.05 6.05 6.981 6.981 0 003 11a7 7 0 1011.95-4.95c-.592-.591-.98-.985-1.348-1.467-.363-.476-.724-1.063-1.207-2.03zM12.12 15.12A3 3 0 017 13s.879.5 2.5.5c0-1 .5-4 1.25-4.5.5 1 .786 1.293 1.371 1.879A2.99 2.99 0 0113 13a2.99 2.99 0 01-.879 2.121z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </button>
+            </div>
+
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Profile Image -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <!-- Profile Image -->
+                <div class="profile-image-container" id="profileContainer">
+                    <div class="profile-ring"></div>
+                    <div class="profile-ring-2"></div>
+                    <div class="profile-scanner"></div>
+                    <div class="profile-pulse"></div>
+                    <img src="Profile.jpg" alt="Guru Prashanth S" class="profile-image profile-photo">
+                    <video src="hailuo-2_3_make_is_image_to_wave_hands_like_showing_hello_to_viewers-0.mp4"
+                        class="profile-image avatar-video" muted loop playsinline></video>
+                </div>
+
+                <div class="hero-text">
+                    <div class="hero-tag">
+                        <span class="tag-icon glass-emoji emoji-blue">👋</span>
+                        <span>Hello, I'm</span>
+                    </div>
+                    <h1 class="hero-title typing-container">
+                        <span class="typing-text">GURU PRASHANTH S</span><span class="terminal-cursor"></span>
+                    </h1>
+                    <p class="hero-subtitle">AI/ML Enthusiast | AIML Engineer</p>
+                    <div class="hero-kural">
+                        <span class="kural-cursor"></span>தெய்வத்தான் ஆகா தெனினும் முயற்சி<br>
+                        தன் மெய்வருத்தக் கூலி தரும்.
+                    </div>
+                    <p class="hero-description">
+                        AIML student passionate about building intelligent systems, experimenting with AI tools, and
+                        solving real-world problems using machine learning.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>View Projects</span>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <span>Contact Me</span>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                                <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                            </svg>
+                        </a>
+                        <a href="Guru Prashanth's Resume.pdf" download="Guru_Prashanth_S_Resume.pdf"
+                            class="btn btn-secondary">
+                            <span>Download CV</span>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd"
+                                    d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <span>Scroll to explore</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2 class="section-title" data-reveal>
+                <span class="title-number">01.</span> About Me
+            </h2>
+
+            <div class="about-grid">
+                <div class="about-main glass-card" data-reveal>
+                    <div class="about-icon glass-emoji emoji-cyan">🤖</div>
+                    <h3>Architecting Intelligent Systems</h3>
+                    <p>I'm a 2nd year AIML student driven by curiosity and passion for artificial intelligence and
+                        machine learning. My journey revolves around building intelligent systems, experimenting with
+                        cutting-edge AI tools, and solving real-world problems through innovative solutions.</p>
+                    <p>As a fast learner with a research mindset, I constantly explore new ML algorithms, work on
+                        practical projects, and stay updated with the latest developments in AI. My goal is to become
+                        industry-ready through hands-on learning, internships, and meaningful contributions to the AI
+                        community.</p>
+                </div>
+
+                <div class="about-cards">
+                    <div class="info-card glass-card" data-reveal>
+                        <div class="info-icon glass-emoji emoji-tech">🎯</div>
+                        <h4>Career Vision</h4>
+                        <p>Seeking internships and opportunities in AI/ML to build production-ready systems and
+                            contribute to innovative projects.</p>
+                    </div>
+                    <div class="info-card glass-card" data-reveal>
+                        <div class="info-icon glass-emoji emoji-tech">⚡</div>
+                        <h4>Learning Approach</h4>
+                        <p>Hands-on experimentation with AI tools, continuous learning, and building projects that
+                            bridge theory and practice.</p>
+                    </div>
+                    <div class="info-card glass-card" data-reveal>
+                        <div class="info-icon glass-emoji emoji-tech">🚀</div>
+                        <h4>Focus Areas</h4>
+                        <p>Machine learning, intelligent systems design, problem-solving, and leveraging AI for
+                            impactful solutions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <h2 class="section-title" data-reveal>
+                <span class="title-number">02.</span> Skills & Technologies
+            </h2>
+
+            <div class="skills-grid">
+                <!-- Programming -->
+                <div class="skill-category glass-card" data-reveal>
+                    <div class="skill-header">
+                        <div class="skill-icon glass-emoji emoji-dev">💻</div>
+                        <h3>Programming</h3>
+                    </div>
+                    <div class="skill-list">
+                        <span class="skill-badge">C</span>
+                        <span class="skill-badge">Python</span>
+                        <span class="skill-badge">Java</span>
+                        <span class="skill-badge">JavaScript</span>
+                        <span class="skill-badge">HTML</span>
+                        <span class="skill-badge">CSS</span>
+                    </div>
+                </div>
+
+                <!-- AI/ML -->
+                <div class="skill-category glass-card" data-reveal>
+                    <div class="skill-header">
+                        <div class="skill-icon glass-emoji emoji-cyan">🧠</div>
+                        <h3>AI/ML</h3>
+                    </div>
+                    <div class="skill-list">
+                        <span class="skill-badge">Machine Learning</span>
+                        <span class="skill-badge">Data Structures</span>
+                        <span class="skill-badge">Problem Solving</span>
+                    </div>
+                </div>
+
+                <!-- AI Tools -->
+                <div class="skill-category glass-card" data-reveal>
+                    <div class="skill-header">
+                        <div class="skill-icon glass-emoji emoji-cyan">🤖</div>
+                        <h3>AI Tools</h3>
+                    </div>
+                    <div class="skill-list">
+                        <span class="skill-badge">ChatGPT</span>
+                        <span class="skill-badge">Gemini AI</span>
+                        <span class="skill-badge">Claude</span>
+                        <span class="skill-badge">DeepSeek</span>
+                        <span class="skill-badge">Perplexity</span>
+                        <span class="skill-badge">Kaggle</span>
+                    </div>
+                </div>
+
+                <!-- Development Tools -->
+                <div class="skill-category glass-card" data-reveal>
+                    <div class="skill-header">
+                        <div class="skill-icon glass-emoji emoji-dev">🛠️</div>
+                        <h3>Development Tools</h3>
+                    </div>
+                    <div class="skill-list">
+                        <span class="skill-badge">GitHub</span>
+                        <span class="skill-badge">VS Code</span>
+                        <span class="skill-badge">Cursor</span>
+                        <span class="skill-badge">Canva</span>
+                        <span class="skill-badge">Figma</span>
+                        <span class="skill-badge">No-code Tools</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <h2 class="section-title" data-reveal>
+                <span class="title-number">03.</span> Featured Projects
+            </h2>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card glass-card" data-reveal>
+                    <div class="project-header">
+                        <div class="project-number">01</div>
+                        <div class="project-badge">Featured</div>
+                    </div>
+                    <h3>Music Player</h3>
+                    <p>A sleek, interactive web-based music player. Features a modern UI with playlist management,
+                        real-time audio visualization, and a fully responsive design for a premium music experience.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Web Audio</span>
+                    </div>
+                    <a href="https://guruprashanth2005.github.io/Music-Player/" class="project-link" target="_blank">
+                        View Project
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" />
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card glass-card" data-reveal>
+                    <div class="project-header">
+                        <div class="project-number">02</div>
+                        <div class="project-badge">Advanced</div>
+                    </div>
+                    <h3>AI Mentor Chat UI</h3>
+                    <p>Interactive chat interface designed for AI-based learning support. Features modern UI design,
+                        smooth animations, and intuitive user experience for educational AI applications.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <a href="https://guruprashanth2005.github.io/AI-Mentor-Chat-UI/" class="project-link"
+                        target="_blank">
+                        View Project
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" />
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card glass-card" data-reveal>
+                    <div class="project-header">
+                        <div class="project-number">03</div>
+                        <div class="project-badge">Featured UI</div>
+                    </div>
+                    <h3>SaaS Home Page UI</h3>
+                    <p>A high-conversion SaaS landing page featuring glassmorphic UI components, smooth scroll
+                        animations,
+                        and a modern dark-themed aesthetic. Built for performance and premium user experience.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Responsive</span>
+                    </div>
+                    <a href="https://guruprashanth2005.github.io/SaaS-Home-Page/" class="project-link" target="_blank">
+                        View Project
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" />
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card glass-card" data-reveal>
+                    <div class="project-header">
+                        <div class="project-number">04</div>
+                        <div class="project-badge">Web App</div>
+                    </div>
+                    <h3>To-Do List Web App</h3>
+                    <p>Task organization interface with clean design and intuitive functionality. Helps users manage
+                        daily tasks efficiently with local storage persistence and responsive design.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <a href="https://github.com/GuruPrashanth2005" class="project-link" target="_blank">
+                        View Project
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" />
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card glass-card" data-reveal>
+                    <div class="project-header">
+                        <div class="project-number">05</div>
+                        <div class="project-badge">Game Logic</div>
+                    </div>
+                    <h3>Stone Paper Scissor Game</h3>
+                    <p>Logic-based console game built in C programming. Implements game mechanics, user interaction,
+                        score tracking, and clean algorithmic logic for gameplay.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">C</span>
+                        <span class="tech-tag">Algorithms</span>
+                    </div>
+                    <a href="https://github.com/GuruPrashanth2005" class="project-link" target="_blank">
+                        View Project
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" />
+                        </svg>
+                    </a>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card glass-card" data-reveal>
+                    <div class="project-header">
+                        <div class="project-number">06</div>
+                        <div class="project-badge">Experimental</div>
+                    </div>
+                    <h3>AI/ML Learning Experiments</h3>
+                    <p>Ongoing learning-focused development and experimentation with AI tools and systems. Exploring
+                        machine learning concepts, testing AI models, and building practical implementations.</p>
+                    <div class="tech-stack">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">ML Tools</span>
+                        <span class="tech-tag">AI APIs</span>
+                    </div>
+                    <a href="https://github.com/GuruPrashanth2005" class="project-link" target="_blank">
+                        View Experiments
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="section achievements-section">
+        <div class="container">
+            <h2 class="section-title" data-reveal>
+                <span class="title-number">04.</span> Achievements
+            </h2>
+
+            <div class="achievements-grid">
+                <div class="achievement-badge glass-card" data-reveal>
+                    <div class="achievement-icon winner glass-emoji emoji-gold">🏆</div>
+                    <h3>Winner</h3>
+                    <p>BIT Hackathon Season 2</p>
+                    <div class="achievement-glow"></div>
+                </div>
+
+                <div class="achievement-badge glass-card" data-reveal>
+                    <div class="achievement-icon participant glass-emoji emoji-tech">🎯</div>
+                    <h3>Participant</h3>
+                    <p>Smart India Hackathon 2025</p>
+                    <div class="achievement-glow"></div>
+                </div>
+
+                <div class="achievement-badge glass-card" data-reveal>
+                    <div class="achievement-icon active glass-emoji emoji-tech">⚡</div>
+                    <h3>Active Learner</h3>
+                    <p>AI/ML Learning & Project Building</p>
+                    <div class="achievement-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Strengths Section -->
+    <section id="strengths" class="section strengths-section">
+        <div class="container">
+            <h2 class="section-title" data-reveal>
+                <span class="title-number">05.</span> Core Strengths
+            </h2>
+
+            <div class="strengths-cloud">
+                <div class="strength-item" data-reveal>Problem Solving</div>
+                <div class="strength-item" data-reveal>AI Tools Usage</div>
+                <div class="strength-item" data-reveal>Fast Learner</div>
+                <div class="strength-item" data-reveal>Self Learner</div>
+                <div class="strength-item" data-reveal>Creative Thinking</div>
+                <div class="strength-item" data-reveal>Hardworking</div>
+                <div class="strength-item" data-reveal>Team Work</div>
+                <div class="strength-item" data-reveal>Leadership</div>
+                <div class="strength-item" data-reveal>Mentoring</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title" data-reveal>
+                <span class="title-number">06.</span> Let's Connect
+            </h2>
+            <p class="section-subtitle" data-reveal>
+                Open to internships, collaborations, and AI/ML opportunities
+            </p>
+
+            <div class="contact-grid">
+                <a href="https://github.com/GuruPrashanth2005" target="_blank" class="contact-card glass-card"
+                    data-reveal>
+                    <div class="contact-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                        </svg>
+                    </div>
+                    <h3>GitHub</h3>
+                    <p>@GuruPrashanth2005</p>
+                </a>
+
+                <a href="https://www.linkedin.com/in/guruprashanths/" target="_blank" class="contact-card glass-card"
+                    data-reveal>
+                    <div class="contact-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                        </svg>
+                    </div>
+                    <h3>LinkedIn</h3>
+                    <p>guruprashanths</p>
+                </a>
+
+                <a href="https://leetcode.com/u/GURU_PRASHANTH_S/" target="_blank" class="contact-card glass-card"
+                    data-reveal>
+                    <div class="contact-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z" />
+                        </svg>
+                    </div>
+                    <h3>LeetCode</h3>
+                    <p>GURU_PRASHANTH_S</p>
+                </a>
+
+                <a href="mailto:gprashanth0905@gmail.com" class="contact-card glass-card" data-reveal>
+                    <div class="contact-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M0 3v18h24v-18h-24zm6.623 7.929l-4.623 5.712v-9.458l4.623 3.746zm-4.141-5.929h19.035l-9.517 7.713-9.518-7.713zm5.694 7.188l3.824 3.099 3.83-3.104 5.612 6.817h-18.779l5.513-6.812zm9.208-1.264l4.616-3.741v9.348l-4.616-5.607z" />
+                        </svg>
+                    </div>
+                    <h3>Email</h3>
+                    <p>gprashanth0905@gmail.com</p>
+                </a>
+
+                <a href="https://www.instagram.com/tej_gp0905" target="_blank" class="contact-card glass-card"
+                    data-reveal>
+                    <div class="contact-icon">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                        </svg>
+                    </div>
+                    <h3>Instagram</h3>
+                    <p>@tej_gp0905</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">
+                    Designed & Built by <span class="highlight">Guru Prashanth S</span>
+                </p>
+                <p class="footer-tagline">AIML Engineer | AI Enthusiast | Problem Solver</p>
+                <p class="footer-year">© <span id="year"></span> All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Hidden Resume Template for PDF Export -->
+    <div id="resume-template" style="display: none;">
+        <div class="resume-header">
+            <h1>GURU PRASHANTH S</h1>
+            <p class="resume-subtitle">AI/ML Engineer | AIML Student</p>
+            <div class="resume-contact">
+                <span>📧 <a href="mailto:gprashanth0905@gmail.com">gprashanth0905@gmail.com</a></span> |
+                <span>🔗 linkedin.com/in/guruprashanths</span> |
+                <span>💻 github.com/GuruPrashanth2005</span>
+            </div>
+        </div>
+
+        <div class="resume-section">
+            <h2 class="resume-section-title">Career Vision</h2>
+            <p>2nd year AIML student passionate about building intelligent systems and solving real-world problems using
+                machine learning. Seeking internships and opportunities to build production-ready AI systems.</p>
+        </div>
+
+        <div class="resume-section">
+            <h2 class="resume-section-title">Education</h2>
+            <div class="resume-item">
+                <h3>Bachelor of Engineering in AIML</h3>
+                <p>2nd Year Student | Focus on AI/ML Algorithms & Data Structures</p>
+            </div>
+        </div>
+
+        <div class="resume-section">
+            <h2 class="resume-section-title">Technical Skills</h2>
+            <div class="resume-skills-grid">
+                <div class="resume-skill-cat">
+                    <strong>Programming:</strong> C, Python, Java, JavaScript, HTML, CSS
+                </div>
+                <div class="resume-skill-cat">
+                    <strong>AI/ML:</strong> Machine Learning, Data Structures, Problem Solving
+                </div>
+                <div class="resume-skill-cat">
+                    <strong>Tools:</strong> GitHub, VS Code, Cursor, Figma, Kaggle, AI APIs (ChatGPT, Gemini, Claude)
+                </div>
+            </div>
+        </div>
+
+        <div class="resume-section">
+            <h2 class="resume-section-title">Featured Projects</h2>
+            <div class="resume-item">
+                <h3>AI Mentor Chat UI</h3>
+                <p>Interactive chat interface for AI-based learning support with modern UI and smooth animations.</p>
+            </div>
+            <div class="resume-item">
+                <h3>To-Do List Web App</h3>
+                <p>Task organization interface with local storage persistence and responsive design.</p>
+            </div>
+            <div class="resume-item">
+                <h3>Stone Paper Scissor Game</h3>
+                <p>Logic-based console game built in C implementing clean algorithmic game mechanics.</p>
+            </div>
+        </div>
+
+        <div class="resume-section">
+            <h2 class="resume-section-title">Achievements</h2>
+            <ul>
+                <li><strong>Winner</strong> - BIT Hackathon Season 2</li>
+                <li><strong>Participant</strong> - Smart India Hackathon 2025</li>
+                <li><strong>Active Learner</strong> - Continuous AI/ML project building and experimentation</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
