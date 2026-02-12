@@ -237,6 +237,18 @@ if (downloadBtn) {
     });
 }
 
+// ==================== FEATURED SPOTLIGHT ====================
+const featuredCard = document.querySelector('.featured-card');
+if (featuredCard) {
+    featuredCard.addEventListener('mousemove', (e) => {
+        const rect = featuredCard.getBoundingClientRect();
+        const x = ((e.clientX - rect.left) / rect.width) * 100;
+        const y = ((e.clientY - rect.top) / rect.height) * 100;
+        featuredCard.style.setProperty('--mouse-x', `${x}%`);
+        featuredCard.style.setProperty('--mouse-y', `${y}%`);
+    });
+}
+
 // ==================== CONSOLE MESSAGE ====================
 console.log('%c🤖 AIML Portfolio Loaded', 'color: #3b82f6; font-size: 16px; font-weight: bold;');
 console.log('%cBuilt by Guru Prashanth S', 'color: #8b5cf6; font-size: 12px;');
