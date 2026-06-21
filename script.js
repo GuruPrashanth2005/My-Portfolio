@@ -249,6 +249,33 @@ if (featuredCard) {
     });
 }
 
+// ==================== CERTIFICATIONS FILTER ====================
+const certFilterBtns = document.querySelectorAll('.cert-filter-btn');
+const certCards = document.querySelectorAll('.cert-card');
+
+certFilterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        // Remove active class from all buttons
+        certFilterBtns.forEach(b => b.classList.remove('active'));
+        // Add active class to clicked button
+        btn.classList.add('active');
+
+        const filterValue = btn.getAttribute('data-filter');
+
+        certCards.forEach(card => {
+            const category = card.getAttribute('data-category');
+            
+            if (filterValue === 'all' || category === filterValue) {
+                card.classList.remove('hidden');
+                // Ensure filtered-in cards are revealed
+                card.classList.add('revealed');
+            } else {
+                card.classList.add('hidden');
+            }
+        });
+    });
+});
+
 // ==================== CONSOLE MESSAGE ====================
 console.log('%c🤖 AIML Portfolio Loaded', 'color: #3b82f6; font-size: 16px; font-weight: bold;');
 console.log('%cBuilt by Guru Prashanth S', 'color: #8b5cf6; font-size: 12px;');
